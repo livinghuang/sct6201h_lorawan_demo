@@ -38,3 +38,6 @@ Thumbs.db
 # Ignore user-specific files
 *.backup
 *.bak
+
+# Ignore built folder
+build/
