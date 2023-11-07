@@ -1,0 +1,30 @@
+C:\Users\living\code\github\sct62\sct6201h_lorawan_demo\build\libraries\LoraWan102\loramac\region\RegionAS923.c.o: \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9\libraries\LoraWan102\src\loramac\region\RegionAS923.c \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9\libraries\LoraWan102\src\loramac\region\Region.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_hw_support/include/esp_sleep.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_common/include/esp_err.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_common/include/esp_compiler.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/hal/include/hal/touch_sensor_types.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_common/include/esp_attr.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/soc.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_common/include/esp_assert.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/esp_common/include/esp_bit_defs.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/soc_caps.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/hal/include/hal/gpio_types.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/include/soc/gpio_periph.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/io_mux_reg.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/gpio_struct.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/gpio_reg.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9/tools/sdk/esp32c3/include/soc/esp32c3/include/soc/gpio_sig_map.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\driver\timer.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\loramac\utilities.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\driver\debug.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\loramac\loramac.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\driver\timer.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\loramac\loramaccrypto.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\radio\radio.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\loramac\region/Region.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\loramac\utilities.h \
+ c:\users\living\appdata\local\arduino15\packages\heltec-esp32\hardware\esp32\0.0.9\libraries\lorawan102\src\radio\radio.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9\libraries\LoraWan102\src\loramac\region\RegionCommon.h \
+ C:\Users\living\AppData\Local\Arduino15\packages\Heltec-esp32\hardware\esp32\0.0.9\libraries\LoraWan102\src\loramac\region\RegionAS923.h

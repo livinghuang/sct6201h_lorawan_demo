@@ -1,0 +1,197 @@
+[
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\cores\\esp32"
+  },
+  {
+    "Sourcefile": null,
+    "Include": "",
+    "Includepath": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\variants\\esp32c3"
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\sct6201h_lorawan_demo.ino.cpp",
+    "Include": "Wire.h",
+    "Includepath": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\Wire\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\sct6201h_lorawan_demo.ino.cpp",
+    "Include": "LoRaWan_APP.h",
+    "Includepath": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\sct6201h_lorawan_demo.ino.cpp",
+    "Include": "SPI.h",
+    "Includepath": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\SPI\\src"
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\sct6201h_lorawan_demo.ino.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\BMP280.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\code\\github\\sct62\\sct6201h_lorawan_demo\\build\\sketch\\HDC1080.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\Wire\\src\\Wire.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\LoRaWan_APP.cpp",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\board.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\delay.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\gpio-board.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\gpio.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\sx1262-board.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\sx126x.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\sx1276-board.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\driver\\sx1276.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\LoRaMac.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\LoRaMacClassB.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\LoRaMacConfirmQueue.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\LoRaMacCrypto.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\aes.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\cmac.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\Region.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionAS923.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionAU915.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionCN470.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionCN779.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionCommon.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionEU433.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionEU868.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionIN865.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionKR920.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionUS915-Hybrid.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\region\\RegionUS915.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\loramac\\utilities.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\LoraWan102\\src\\radio\\radio.c",
+    "Include": "",
+    "Includepath": null
+  },
+  {
+    "Sourcefile": "C:\\Users\\living\\AppData\\Local\\Arduino15\\packages\\Heltec-esp32\\hardware\\esp32\\0.0.9\\libraries\\SPI\\src\\SPI.cpp",
+    "Include": "",
+    "Includepath": null
+  }
+]
