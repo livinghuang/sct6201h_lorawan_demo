@@ -232,22 +232,6 @@ void setup()
   Serial.begin(115200);
   Mcu.begin();
 
-  while (0)
-  {
-    power_On_Sensor_Bus();
-    delay(100);
-    hdc1080_fetch();
-    delay(100);
-    power_Off_Sensor_Bus();
-    delay(100);
-    power_On_Sensor_Bus();
-    delay(100);
-    bmp280_fetch();
-    delay(100);
-    power_Off_Sensor_Bus();
-    delay(100);
-  }
-
   deviceState = DEVICE_STATE_INIT;
 }
 
