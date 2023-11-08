@@ -232,12 +232,6 @@ void setup()
   Serial.begin(115200);
   Mcu.begin();
 
-  while (1)
-  {
-    Serial.println(getBatVolt());
-    delay(1000);
-  }
-
   deviceState = DEVICE_STATE_INIT;
 }
 
