@@ -300,17 +300,18 @@ uint8_t GetBatteryLevel(void)
   const float minBattery = 3.0;
   const float batVolt = getBatVolt();
   const float batVoltage = fmax(minBattery, fmin(maxBattery, batVolt));
-  uint8_t batlevel = BAT_LEVEL_EMPTY + ((batVoltage - minBattery) / (maxBattery - minBattery)) * (BAT_LEVEL_FULL - BAT_LEVEL_EMPTY);
+  uint8_t batLevel = BAT_LEVEL_EMPTY + ((batVoltage - minBattery) / (maxBattery - minBattery)) * (BAT_LEVEL_FULL - BAT_LEVEL_EMPTY);
   if (batVolt > 4.2)
   {
-    batlevel = 255;
+    batLevel = 255;
   }
-  if (batVolt < 3)
+  if (batVolt < 3.01)
   {
-    batlevel = 0;
+    batLevel = 0;
   }
   Serial.print("{");
-  Serial.print(batVoltage);
+  Serial.println(batVoltage);
+  Serial.print(batLevel);
   Serial.println("}");
-  return batlevel;
+  return batLevel;
 }
