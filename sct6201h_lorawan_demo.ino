@@ -232,6 +232,12 @@ void setup()
   Serial.begin(115200);
   Mcu.begin();
 
+  while (1)
+  {
+    Serial.println(getBatVolt());
+    delay(1000);
+  }
+
   deviceState = DEVICE_STATE_INIT;
 }
 
@@ -283,6 +289,8 @@ void loop()
 float getBatVolt()
 {
   uint32_t sum = 0;
+  uint32_t test_min = 695;
+  uint32_t test_max = 1030;
   for (size_t i = 0; i < 16; i++)
   {
     sum += analogRead(2);
@@ -291,7 +299,7 @@ float getBatVolt()
   float avg = (float)(sum >> 4) / 4095 * 2400;
   Serial.print("avg");
   Serial.println(avg);
-  return ((avg - 565) * (4.2 - 3) / (868 - 565) + 3);
+  return ((avg - test_min) * (4.2 - 3) / (test_max - test_min) + 3);
 }
 
 uint8_t GetBatteryLevel(void)
