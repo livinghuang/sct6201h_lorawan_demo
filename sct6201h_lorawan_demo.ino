@@ -43,16 +43,14 @@ bool bmp280_fetch(void)
   {
     return 0;
   }
-  delay(50);
   bmp.setSampling(BMP280::MODE_NORMAL,     /* Operating Mode. */
                   BMP280::SAMPLING_X2,     /* Temp. oversampling */
                   BMP280::SAMPLING_X16,    /* Pressure oversampling */
                   BMP280::FILTER_X16,      /* Filtering. */
                   BMP280::STANDBY_MS_500); /* Standby time. */
-  delay(50);
+  delay(20);
   float temp = bmp.readTemperature();
   float Pressure = (float)bmp.readPressure() / 100.0;
-  delay(100);
   int c = 0;
   while ((temp < -50) || (Pressure > 1100) || (Pressure < 500))
   {
@@ -61,9 +59,8 @@ bool bmp280_fetch(void)
     bmp.end();
     Serial.println("BMP ERROR");
     Serial.flush();
-    delay(100);
     bmp.begin();
-    delay(100);
+    delay(10);
     bmp.setSampling(BMP280::MODE_NORMAL,     /* Operating Mode. */
                     BMP280::SAMPLING_X2,     /* Temp. oversampling */
                     BMP280::SAMPLING_X16,    /* Pressure oversampling */
@@ -71,6 +68,7 @@ bool bmp280_fetch(void)
                     BMP280::STANDBY_MS_500); /* Standby time. */
     temp = bmp.readTemperature();
     Pressure = (float)bmp.readPressure() / 100.0;
+    delay(10);
     c++;
     if (c > 3)
     {
@@ -78,7 +76,7 @@ bool bmp280_fetch(void)
     }
   }
   bmp.putBMP280ToSleep();
-  delay(100);
+  delay(10);
   bmp.end();
   // Serial.printf("T=%.2f degC, Pressure=%.2f hPa\n", temp, Pressure);
   bmp280_result.bmp280_internal_temperature = temp;
@@ -95,7 +93,7 @@ void power_On_Sensor_Bus()
   digitalWrite(pSDA, HIGH);
   digitalWrite(pSCL, HIGH);
   // Serial.println("I2C ON");
-  delay(15);
+  delay(5);
   digitalWrite(pVext, LOW);
   // Serial.println("Vext ON");
 }
@@ -109,20 +107,19 @@ void power_Off_Sensor_Bus()
   digitalWrite(pSDA, LOW);
   digitalWrite(pSCL, LOW);
   // Serial.println("I2C OFF");
-  delay(15);
   digitalWrite(pVext, HIGH);
   // Serial.println("Vext OFF");
 }
 
 /* OTAA para*/
-uint8_t devEui[] = {0x22, 0x32, 0x33, 0x00, 0x00, 0x88, 0x88, 0x08};
+uint8_t devEui[] = {0x22, 0x32, 0x33, 0x00, 0x00, 0x88, 0x88, 0x07};
 uint8_t appEui[] = {0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00};
-uint8_t appKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
+uint8_t appKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x87};
 
 /* ABP para*/
-uint8_t nwkSKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
-uint8_t appSKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88};
-uint32_t devAddr = (uint32_t)0x88888888;
+uint8_t nwkSKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x87};
+uint8_t appSKey[] = {0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x88, 0x87};
+uint32_t devAddr = (uint32_t)0x88888887;
 
 /*LoraWan channelsmask, default channels 0-7*/
 uint16_t userChannelsMask[6] = {0x00FF, 0x0000, 0x0000, 0x0000, 0x0000, 0x0000};
@@ -134,7 +131,7 @@ LoRaMacRegion_t loraWanRegion = LORAMAC_REGION_AS923_AS2;
 DeviceClass_t loraWanClass = CLASS_A;
 
 /*the application data transmission duty cycle.  value in [ms].*/
-uint32_t appTxDutyCycle = 120000;
+uint32_t appTxDutyCycle = 60000;
 
 /*OTAA or ABP*/
 bool overTheAirActivation = false;
@@ -171,25 +168,11 @@ uint8_t confirmedNbTrials = 4;
 
 void fetchSensorData()
 {
-  int i;
-  for (i = 0; i < 5; i++)
-  {
-    power_On_Sensor_Bus();
-    delay(15);
-    hdc1080_fetch();
-    delay(10);
-    power_Off_Sensor_Bus();
-    delay(15);
-  }
-  for (i = 0; i < 5; i++)
-  {
-    power_On_Sensor_Bus();
-    delay(10);
-    bmp280_fetch();
-    // delay(10);
-    power_Off_Sensor_Bus();
-    delay(5);
-  }
+  power_On_Sensor_Bus();
+  delay(5);
+  bmp280_fetch();
+  hdc1080_fetch();
+  power_Off_Sensor_Bus();
 }
 
 // Prepares the payload of the frame
@@ -198,7 +181,6 @@ static void prepareTxFrame(uint8_t port)
   bool rst = 0;
   appDataSize = sizeof(hdc1080_data) + sizeof(bmp280_data) + 1;
 
-  fetchSensorData();
   Serial.println("Fetch data Done");
   Serial.printf("T=%.2f degC, Pressure=%.2f hPa\n", bmp280_result.bmp280_internal_temperature, bmp280_result.pressure);
   Serial.printf("T=%.2f degC, Humidity=%.2f %\n", hdc1080_result.temperature, hdc1080_result.humidity);
@@ -231,7 +213,7 @@ void setup()
 {
   Serial.begin(115200);
   Mcu.begin();
-
+  fetchSensorData();
   deviceState = DEVICE_STATE_INIT;
 }
 
@@ -290,7 +272,7 @@ float getBatVolt()
     sum += analogRead(2);
     delay(10);
   }
-  float avg = (float)(sum >> 4) / 4095 * 2400;
+  float avg = (float)(sum >> 4) / 4095 * 2500;
   Serial.print("avg");
   Serial.println(avg);
   return ((avg - test_min) * (4.2 - 3) / (test_max - test_min) + 3);
@@ -307,7 +289,7 @@ uint8_t GetBatteryLevel(void)
   {
     batLevel = 255;
   }
-  if (batVolt < 3.01)
+  if (batVolt < 3.0)
   {
     batLevel = 0;
   }
